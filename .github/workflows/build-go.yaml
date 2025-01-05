@@ -4,7 +4,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "go build" > ./test.txt
+      - run: echo "go 1build" > ./test.txt
 #      - run: >-
 #          curl -o /dev/null -s -w "%{http_code}\n"
 #          -H "Content-Type: application/json"
