@@ -10,7 +10,6 @@ jobs:
 #          -H "Content-Type: application/json"
 #          -d '{"msgtype": "text", "text": {"content": "这是一个测试消息，关键词是test。"}}'
 #          "https://oapi.dingtalk.com/robot/send?access_token=c82ba73f86f5fb9b24c9dc2c8ef6311a26c8ebbaa08e6a413cd8f909fae75f96"
-      - run: cat ./test.txt
       - run: go build build.go
   job2:
     runs-on: windows-latest
