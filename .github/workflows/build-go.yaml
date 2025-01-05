@@ -9,15 +9,16 @@ jobs:
 
 
     steps:
-#      - name: 读取仓库内容
-#        uses: actions/checkout@v4
+      - name: 读取仓库内容
+        uses: actions/checkout@v4
 #      - run: >-
 #          curl -o /dev/null -s -w "%{http_code}\n"
 #          -H "Content-Type: application/json"
 #          -d '{"msgtype": "text", "text": {"content": "这是一个测试消息，关键词是test。"}}'
 #          "https://oapi.dingtalk.com/robot/send?access_token=c82ba73f86f5fb9b24c9dc2c8ef6311a26c8ebbaa08e6a413cd8f909fae75f96"
       - name: 安装依赖
-        run: npm install
-
-      - name: 项目打包
-        run: npm run build
+#        run: npm install
+        run: node --version
+#
+#      - name: 项目打包
+#        run: npm run build
