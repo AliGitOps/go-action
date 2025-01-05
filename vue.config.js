@@ -6,6 +6,7 @@ function resolve (dir) {
 }
 
 module.exports = {
+  lintOnSave: false,
   publicPath: './',
   outputDir: 'student',
   assetsDir: 'static',
