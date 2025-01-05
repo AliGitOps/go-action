@@ -20,13 +20,13 @@ jobs:
       - name: 登录DcoekrHub
         uses: docker/login-action@v3
         with:
-          username: ${{ DOCKER_HUB_USERNAME }}
-          password: ${{ DOCKER_HUB_TOKEN }}
+          username: ${{ secret.DOCKER_HUB_USERNAME }}
+          password: ${{ secret.DOCKER_HUB_TOKEN }}
       - name: 构建并推送到 Docker Hub
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: githubops/nginx:v2
+          tags: githubops/demo:v1
 
 
 
