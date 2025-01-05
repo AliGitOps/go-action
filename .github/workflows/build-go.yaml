@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: pwd
-    - run: ls
+    - run:
   job2:
     runs-on: windows-latest
     steps:
