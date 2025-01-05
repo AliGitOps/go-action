@@ -9,8 +9,8 @@ jobs:
 
 
     steps:
-      - name: 读取仓库内容
-        uses: actions/checkout@v4
+#      - name: 读取仓库内容
+#        uses: actions/checkout@v4
 #      - run: >-
 #          curl -o /dev/null -s -w "%{http_code}\n"
 #          -H "Content-Type: application/json"
