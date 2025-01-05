@@ -1,10 +1,10 @@
 name: 打包xzs
 on:
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
   schedule:
-    - cron: '41 12 * * *'
+    - cron: '46 12 * * *'
 
 
 permissions:
